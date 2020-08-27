@@ -56,12 +56,26 @@ a {
 
 @media (min-width: 500px) {
   .card {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-areas: 'avatar content';
+    margin: 0 4em;
+    padding-right: 2em;
+    padding-bottom: 2em;
   }
   span {
+    position: initial;
+    display: block;
+    grid-area: avatar;
+    margin-left: -3.8em;
+    margin-top: 0.8em;
   }
   .card-details {
+    grid-area: content;
+    margin-left: 1.5em;
   }
   a {
+    display: inline-block;
   }
 }
 
